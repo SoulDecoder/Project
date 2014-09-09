@@ -11,7 +11,17 @@
 
 #include "cocos2d.h"
 
+
+USING_NS_CC;
+typedef enum
+{
+    caseStart,
+    caseAbout,
+    caseSetting
+} MenuActionType;
+
 class MainMenu: public cocos2d::Layer{
+    
 public:
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
     static cocos2d::Scene* createScene();
@@ -20,11 +30,13 @@ public:
     virtual bool init();
     
     // a selector callback
-    void menuCloseCallback(cocos2d::Ref* pSender);
+    void menuCallback(cocos2d::Ref* pSender);
     
     // implement the "static create()" method manually
     CREATE_FUNC(MainMenu);
 };
+
+
 
 
 #endif /* defined(__JumpRabbit__Menu__) */

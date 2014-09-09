@@ -1,0 +1,29 @@
+//
+//  MainScene.h
+//  JumpRabbit
+//
+//  Created by jihaitao on 14-8-29.
+//
+//
+
+#ifndef __JumpRabbit__MainScene__
+#define __JumpRabbit__MainScene__
+
+#include <iostream>
+#include <cocos2d.h>
+#include "Cloud.h"
+
+USING_NS_CC;
+
+class MainScene:public Layer
+{
+private:
+    Size visibleSize;
+    
+public:
+    static Scene * createScene();
+    virtual bool init();
+    CREATE_FUNC(MainScene);
+};
+
+#endif /* defined(__JumpRabbit__MainScene__) */
