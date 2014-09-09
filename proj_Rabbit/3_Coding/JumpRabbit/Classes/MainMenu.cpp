@@ -42,29 +42,36 @@ bool MainMenu::init()
     log("width=%g,height=%g",visibleSize.width,visibleSize.height);
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     
+    
+    auto background=Sprite::create("menu_background.jpg");
+    background->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
+    background->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
+    addChild(background);
     /////////////////////////////
     // 2. add a menu item with "X" image, which is clicked to quit the program
     //    you may modify it.
     
     // add a "close" icon to exit the progress. it's an autorelease object
     auto startItem = MenuItemImage::create(
-                                           "home/menu_start_normal.png",
-                                           "home/menu_start_selected.png",
+                                           "menu_start_normal.png",
+                                           "menu_start_selected.png",
                                            CC_CALLBACK_1(MainMenu::menuCallback, this));
     auto settingItem = MenuItemImage::create(
-                                           "home/menu_setting_normal.png",
-                                           "home/menu_setting_selected.png",
+                                           "menu_setting_normal.png",
+                                           "menu_setting_selected.png",
                                            CC_CALLBACK_1(MainMenu::menuCallback, this));
     auto aboutItem = MenuItemImage::create(
-                                           "home/menu_about_normal.png",
-                                           "home/menu_about_selected.png",
+                                           "menu_about_normal.png",
+                                           "menu_about_selected.png",
                                            CC_CALLBACK_1(MainMenu::menuCallback, this));
     
-    startItem->setPosition(Vec2(visibleSize.width*1/5, visibleSize.height/2));
+    startItem->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
+    startItem->setPosition(Vec2(visibleSize.width*0.5, visibleSize.height*0.6));
+
     startItem->setTag(MenuActionType::caseStart);
-    settingItem->setPosition(Vec2(visibleSize.width*2/5, visibleSize.height/2));
+    settingItem->setPosition(Vec2(visibleSize.width*0.5, visibleSize.height*0.45));
     settingItem->setTag(MenuActionType::caseSetting);
-    aboutItem->setPosition(Vec2(visibleSize.width*3/5, visibleSize.height/2));
+    aboutItem->setPosition(Vec2(visibleSize.width*0.5, visibleSize.height*0.3));
     aboutItem->setTag(MenuActionType::caseAbout);
     
     // create menu, it's an autorelease object
@@ -73,11 +80,11 @@ bool MainMenu::init()
     this->addChild(menu, 1);
     
     //显示积分
-    auto label = LabelTTF::create("10000", "Arial", 24);
-    
+    auto label = LabelTTF::create("最高分:10000", "Arial", 30);
+    label->setColor(Color3B::YELLOW);
+    label->setAnchorPoint(Vec2::ANCHOR_BOTTOM_LEFT);
     // position the label on the center of the screen
-    label->setPosition(Vec2(origin.x +  visibleSize.width/2,
-                            origin.y + visibleSize.height/2 + 200));
+    label->setPosition(10,10);
     
     // add the label as a child to this layer
     this->addChild(label, 1);
