@@ -18,12 +18,17 @@ USING_NS_CC;
 class Cloud:public Sprite
 {
 private:
+    static Vector<Cloud*> *clouds;
+    
+protected:
     //屏幕的可见区域
     Size visibleSize;
 
 public:
-    static Cloud* create();
+    static Vector<Cloud*>* getClouds();
     virtual bool init();
+    virtual void initPhysics();
+   
 };
 
 #endif /* defined(__JumpRabbit__Cloud__) */

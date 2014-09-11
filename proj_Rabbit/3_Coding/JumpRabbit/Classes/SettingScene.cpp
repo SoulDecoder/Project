@@ -24,9 +24,9 @@ bool SettingScene::init()
     
     Size size = Director::getInstance()->getVisibleSize();
     
-    auto s = Sprite::create("HelloWorld.png");
-    s->cocos2d::Node::setPosition(Vec2(size.width/2,size.height/2));
-    addChild(s);
+    auto background = Sprite::create("sample.jpg");
+    background->cocos2d::Node::setPosition(Vec2(size.width/2,size.height/2));
+    addChild(background);
 
     return  true;
 }

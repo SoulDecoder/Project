@@ -8,26 +8,26 @@
 
 #include "Cloud.h"
 
-Cloud* Cloud::create()
-{
-    auto cloud = new Cloud();
-    cloud->init();
-    cloud->autorelease();
-    return cloud;
+Vector<Cloud*> *Cloud::clouds = new Vector<Cloud*>;
+
+Vector<Cloud*>* Cloud::getClouds(){
+    return Cloud::clouds;
 }
 
 bool Cloud::init()
 {
-    
     Sprite::init();
     visibleSize = Director::getInstance()->getVisibleSize();
-    
-    Size size =Size(100,100);
-    
-    setContentSize(size);
-    setAnchorPoint(	Point::ZERO);
-    setTextureRect(Rect(0,0,size.width,size.height));
-    setColor(Color3B::GREEN);
-   
+    float f =  ((float)(rand()%95))/100;
+    setPosition(Vec2(visibleSize.width*f, visibleSize.height));
     return true;
+}
+
+void Cloud::initPhysics(){
+    Size size = getContentSize();
+    setPhysicsBody(PhysicsBody::createBox(size));
+    getPhysicsBody()->setRotationEnable(false);
+    getPhysicsBody()->setContactTestBitmask(1);
+    getPhysicsBody()->setGravityEnable(false);
+    getPhysicsBody()->setVelocity(Vec2(0, -300));
 }

@@ -1,30 +1,1 @@
-//
-//  MainScene.cpp
-//  JumpRabbit
-//
-//  Created by jihaitao on 14-8-29.
-//
-//
-
-#include "MainScene.h"
-Scene* MainScene::createScene()
-{
-    auto scene = Scene::create();
-    auto layer = MainScene::create();
-    scene->addChild(layer);
-    return scene;
-}
-
-bool MainScene::init()
-{
-    if (!Layer::init()) {
-        return false;
-    }
-    
-    visibleSize = Director::getInstance()->getVisibleSize();
-    auto cloud = Cloud::create();
-    cloud->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
-    addChild(cloud);
-    
-    return  true;
-}
+////  MainScene.cpp//  JumpRabbit////  Created by jihaitao on 14-8-29.////#include "MainScene.h"Scene* MainScene::createScene(){    auto scene = Scene::createWithPhysics();    auto layer = MainScene::create();    scene->addChild(layer);    return scene;}bool MainScene::init(){    if (!Layer::init()) {        return false;    }    srand(time(NULL));        Size visibleSize = Director::getInstance()->getVisibleSize();        //添加背景    auto background=Sprite::create("game_back.png");    background->setScale(visibleSize.width/720, visibleSize.height/1280);    background->setAnchorPoint(Vec2::ANCHOR_MIDDLE);    background->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));    addChild(background);        addRabbit();        addListener();    schedule(schedule_selector(MainScene::addCloud), 1);    return  true;}void MainScene::addRabbit(){    rabbit  = Rabbit::create();    addChild(rabbit);}void MainScene::addCloud(float dt){    Cloud* c;    switch (rand()%2) {        case 0:            c=LongCloud::create();            break;        case 1:            c=ShortCloud::create();            break;        default:            break;    }    addChild(c);    Cloud::getClouds()->pushBack(c);}void MainScene::addTopBar(){}void MainScene::addListener(){        auto listener = EventListenerTouchOneByOne::create();        listener->onTouchBegan=[this](Touch* t,Event* e){        log("onTouchBegan");        return true;    };        listener->onTouchMoved=[this](Touch* t,Event* e){        rabbit->setPositionX(t->getLocation().x);        log("onTouchMoved");    };        listener->onTouchEnded = [](Touch* t,Event* e){        log("onTouchEnded");    };        Director::getInstance()->getEventDispatcher()->addEventListenerWithSceneGraphPriority(listener, this);        auto contactListener = EventListenerPhysicsContact::create();    contactListener->onContactBegin = [this](PhysicsContact& contact){        log("onContactBegin");        return true;    };    Director::getInstance()->getEventDispatcher()->addEventListenerWithSceneGraphPriority(contactListener, this);}
