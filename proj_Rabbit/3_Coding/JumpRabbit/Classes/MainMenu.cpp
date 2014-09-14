@@ -20,6 +20,7 @@ Scene* MainMenu::createScene()
     // 'layer' is an autorelease object
     auto layer = MainMenu::create();
     
+    
     // add layer as a child to scene
     scene->addChild(layer);
     
@@ -93,10 +94,8 @@ bool MainMenu::init()
     return true;
 }
 
-
 void MainMenu::menuCallback(Ref* pSender)
 {
-    
     log("lsdlfkasdlkfjaklsdf");
     MenuItem*nmitem = (MenuItem*)pSender;
     

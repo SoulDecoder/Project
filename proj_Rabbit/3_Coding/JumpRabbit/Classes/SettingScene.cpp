@@ -21,12 +21,9 @@ bool SettingScene::init()
     if (!Layer::init()) {
         return false;
     }
-    
     Size size = Director::getInstance()->getVisibleSize();
-    
-    auto background = Sprite::create("sample.jpg");
+    auto background = Sprite::create("sprite_cloud_blue.png");
     background->cocos2d::Node::setPosition(Vec2(size.width/2,size.height/2));
     addChild(background);
-
     return  true;
 }

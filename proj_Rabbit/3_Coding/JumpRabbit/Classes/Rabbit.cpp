@@ -13,9 +13,9 @@
 bool Rabbit::init(){
     
     Sprite::init();
-    initWithFile("rabbit.png");
+    initWithFile("game_rabbit.png");
     Size visibleSize = Director::getInstance()->getVisibleSize();
-    setPosition(Vec2(visibleSize.height/2,visibleSize.width/2));
+    setPosition(Vec2(visibleSize.width/2,visibleSize.height/2));
     
     Size size = this->getContentSize();
     setPhysicsBody(PhysicsBody::createBox(size));
@@ -24,7 +24,7 @@ bool Rabbit::init(){
     getPhysicsBody()->setContactTestBitmask(1);
     
     //test
-    getPhysicsBody()->setGravityEnable(false);
+    getPhysicsBody()->setGravityEnable(true);
     
     return true;
 

@@ -23,7 +23,6 @@ private:
 protected:
     //屏幕的可见区域
     Size visibleSize;
-
 public:
     static Vector<Cloud*>* getClouds();
     virtual bool init();

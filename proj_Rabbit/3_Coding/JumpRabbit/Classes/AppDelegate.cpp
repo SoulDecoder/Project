@@ -18,7 +18,6 @@ bool AppDelegate::applicationDidFinishLaunching() {
     if(!glview) {
         glview = GLView::create("JumpRabbit");
         director->setOpenGLView(glview);
-        glview->setDesignResolutionSize(480, 800, ResolutionPolicy::SHOW_ALL);
     }
 
     // turn on display FPS
