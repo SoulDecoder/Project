@@ -104,6 +104,7 @@ void MainMenu::menuCallback(Ref* pSender)
     switch (nmitem->getTag()) {
         case caseAbout:
             log("Item about");
+            Director::getInstance()->replaceScene(AboutScene::createScene());
             break;
         case caseStart:
             log("Item start");

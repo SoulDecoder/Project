@@ -22,49 +22,84 @@ bool GameOverScene::init()
     }
     
     visibleSize = Director::getInstance()->getVisibleSize();
+    
+    
+    auto background = Sprite::create("game_back.png");
+    background->setPosition(Vec2(visibleSize.width/2,visibleSize.height/2));
+    addChild(background);
+    
     auto overLabel = Label::create();
     overLabel->setString("GameOver");
     overLabel->setSystemFontSize(48);
-    overLabel->setTextColor(Color4B::BLACK);
-    overLabel->setPosition(Vec2(visibleSize.width/2,visibleSize.height-150));
+    overLabel->setTextColor(Color4B::YELLOW);
+    overLabel->setPosition(Vec2(visibleSize.width/2,visibleSize.height/2+350));
     addChild(overLabel);
+
     
-    auto background = Sprite::create("splash_rabbit.png");
-    background->setPosition(Vec2(visibleSize.width/2,visibleSize.height/2+200));
-    addChild(background);
     
-    auto msgLabel = Label::create();
-    msgLabel->setString("还差一点，接近妹子");
-    msgLabel->setSystemFontSize(36);
-    msgLabel->setTextColor(Color4B::BLACK);
-    msgLabel->setPosition(Vec2(visibleSize.width/2,visibleSize.height/2));
-    addChild(msgLabel);
+    auto scoreLabel = Label::create();
+    scoreLabel->setString("得分：");
+    scoreLabel->setSystemFontSize(36);
+    scoreLabel->setTextColor(Color4B::YELLOW);
+    scoreLabel->setPosition(Vec2(visibleSize.width/2-50,visibleSize.height/2+250));
+    addChild(scoreLabel);
     
-    replay = Label::create();
-    replay->setString("再来一次");
-    replay->setSystemFontSize(36);
-    replay->setTextColor(Color4B::BLACK);
-    replay->setPosition(Vec2(visibleSize.width/2,visibleSize.height/2-150));
-    addChild(replay);
+    auto score = Label::create();
+    score->setString("1000");
+    score->setSystemFontSize(36);
+    score->setTextColor(Color4B::YELLOW);
+    score->setPosition(Vec2(visibleSize.width/2+50,visibleSize.height/2+250));
+    addChild(score);
     
-    returnManMenu = Label::create();
-    returnManMenu->setString("返回主菜单");
-    returnManMenu->setSystemFontSize(36);
-    returnManMenu->setTextColor(Color4B::BLACK);
-    returnManMenu->setPosition(Vec2(visibleSize.width/2,visibleSize.height/2-300));
-    addChild(returnManMenu);
+    auto maxScoreLabel = Label::create();
+    maxScoreLabel->setString("最高分：");
+    maxScoreLabel->setSystemFontSize(36);
+    maxScoreLabel->setTextColor(Color4B::YELLOW);
+    maxScoreLabel->setPosition(Vec2(visibleSize.width/2-50,visibleSize.height/2+150));
+    addChild(maxScoreLabel);
     
-    auto listener = EventListenerTouchOneByOne::create();
-    listener->onTouchBegan = [this](Touch *t,Event *e){
-        if (replay->getBoundingBox().containsPoint(t->getLocation())) {
-             Director::getInstance()->replaceScene(MainScene::createScene());
-        }
-        if(returnManMenu->getBoundingBox().containsPoint(t->getLocation())){
-             Director::getInstance()->replaceScene(MainMenu::createScene());
-        }
-        return false;
-    };
+    auto maxScore = Label::create();
+    maxScore->setString("1000");
+    maxScore->setSystemFontSize(36);
+    maxScore->setTextColor(Color4B::YELLOW);
+    maxScore->setPosition(Vec2(visibleSize.width/2+50,visibleSize.height/2+150));
+    addChild(maxScore);
     
-    Director::getInstance()->getEventDispatcher()->addEventListenerWithSceneGraphPriority(listener, this);
+    
+    
+    auto replay = MenuItemImage::create("button_again_normal.png", "button_again_selected.png",
+                                        CC_CALLBACK_1(GameOverScene::callback,this));
+    replay->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2-50));
+    replay->setScale(visibleSize.width/720, visibleSize.height/1280);
+    replay->setTag(1);
+    
+    auto goMenu = MenuItemImage::create("button_goback_normal.png", "button_goback_selected.png",
+                                        CC_CALLBACK_1(GameOverScene::callback,this));
+    goMenu->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2-200));
+    goMenu->setScale(visibleSize.width/720, visibleSize.height/1280);
+    goMenu->setTag(2);
+    
+    
+    auto menu = Menu::create(replay,goMenu, NULL);
+    menu->setPosition(Vec2::ZERO);
+    addChild(menu);
+    
+    
     return  true;
+}
+
+void GameOverScene::callback(cocos2d::Ref *pSender){
+    
+    MenuItem *item = (MenuItem*) pSender;
+    switch (item->getTag()) {
+        case 1:
+             Director::getInstance()->replaceScene(MainScene::createScene());
+            break;
+        case 2:
+             Director::getInstance()->replaceScene(MainMenu::createScene());
+            break;
+        default:
+            break;
+    }
+
 }

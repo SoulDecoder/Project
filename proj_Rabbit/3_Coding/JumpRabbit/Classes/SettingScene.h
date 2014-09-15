@@ -12,9 +12,14 @@
 #include <iostream>
 #include <cocos2d.h>
 
+
 USING_NS_CC;
+using namespace std;
 
 class SettingScene:public Layer{
+private:
+    bool touchBegin(Touch* t,Event *e);
+    void yesButton(Object* obj);
     
 public:
     static Scene * createScene();

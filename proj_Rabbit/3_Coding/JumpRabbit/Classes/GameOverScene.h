@@ -14,6 +14,7 @@
 
 #include "MainScene.h"
 #include "MainMenu.h"
+#include "AboutScene.h"
 
 USING_NS_CC;
 
@@ -28,6 +29,8 @@ public:
     static Scene * createScene();
     virtual bool init();
     CREATE_FUNC(GameOverScene);
+    
+    void callback(Ref* pSender);
 };
 
 #endif /* defined(__JumpRabbit__GameOverScene__) */
