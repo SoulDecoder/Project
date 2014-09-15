@@ -26,7 +26,6 @@ bool AboutScene::init()
 
     
     auto background=Sprite::create("about_back.png");
-    background->setScale(visibleSize.width/720, visibleSize.height/1280);
     background->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
     background->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
     addChild(background);

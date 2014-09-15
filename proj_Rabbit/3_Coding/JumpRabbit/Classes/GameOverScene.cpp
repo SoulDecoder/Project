@@ -70,13 +70,11 @@ bool GameOverScene::init()
     auto replay = MenuItemImage::create("button_again_normal.png", "button_again_selected.png",
                                         CC_CALLBACK_1(GameOverScene::callback,this));
     replay->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2-50));
-    replay->setScale(visibleSize.width/720, visibleSize.height/1280);
     replay->setTag(1);
     
     auto goMenu = MenuItemImage::create("button_goback_normal.png", "button_goback_selected.png",
                                         CC_CALLBACK_1(GameOverScene::callback,this));
     goMenu->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2-200));
-    goMenu->setScale(visibleSize.width/720, visibleSize.height/1280);
     goMenu->setTag(2);
     
     

@@ -45,7 +45,6 @@ bool MainMenu::init()
     
     
     auto background=Sprite::create("menu_background.jpg");
-    background->setScale(visibleSize.width/720, visibleSize.height/1280);
     background->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
     background->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
     addChild(background);
@@ -68,13 +67,10 @@ bool MainMenu::init()
                                            CC_CALLBACK_1(MainMenu::menuCallback, this));
     
     startItem->setPosition(Vec2(visibleSize.width*0.5, visibleSize.height*0.6));
-    startItem->setScale(visibleSize.width/720, visibleSize.height/1280);
     startItem->setTag(MenuActionType::caseStart);
     settingItem->setPosition(Vec2(visibleSize.width*0.5, visibleSize.height*0.45));
-    settingItem->setScale(visibleSize.width/720, visibleSize.height/1280);
     settingItem->setTag(MenuActionType::caseSetting);
     aboutItem->setPosition(Vec2(visibleSize.width*0.5, visibleSize.height*0.3));
-    aboutItem->setScale(visibleSize.width/720, visibleSize.height/1280);
     aboutItem->setTag(MenuActionType::caseAbout);
     
     // create menu, it's an autorelease object
