@@ -19,8 +19,10 @@ USING_NS_CC_EXT;
 class PopScene : public Layer{
 private:
     Size visibleSize;
-    
+    MenuItemImage* onButton;
+    MenuItemImage* offButton;
 public:
+   
     static Scene* createScene();
     virtual bool init();
     CREATE_FUNC(PopScene);

@@ -116,16 +116,8 @@
 		C2C6B26A19C53B33008E0AA4 /* GameOverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2C6B26719C53B33008E0AA4 /* GameOverScene.cpp */; };
 		C2CEFD8419C8601500F4645A /* PopScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2CEFD8219C8601500F4645A /* PopScene.cpp */; };
 		C2CEFD8519C8601500F4645A /* PopScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2CEFD8219C8601500F4645A /* PopScene.cpp */; };
-		C2CEFD8719C8647D00F4645A /* page.psd in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFD8619C8647D00F4645A /* page.psd */; };
-		C2CEFD8819C8647D00F4645A /* page.psd in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFD8619C8647D00F4645A /* page.psd */; };
 		C2CEFD8B19C8764100F4645A /* MySwitch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2CEFD8919C8764100F4645A /* MySwitch.cpp */; };
 		C2CEFD8C19C8764100F4645A /* MySwitch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2CEFD8919C8764100F4645A /* MySwitch.cpp */; };
-		C2CEFD9019C889CD00F4645A /* switch_background.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFD8D19C889CD00F4645A /* switch_background.png */; };
-		C2CEFD9119C889CD00F4645A /* switch_background.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFD8D19C889CD00F4645A /* switch_background.png */; };
-		C2CEFD9219C889CD00F4645A /* switch_off.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFD8E19C889CD00F4645A /* switch_off.png */; };
-		C2CEFD9319C889CD00F4645A /* switch_off.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFD8E19C889CD00F4645A /* switch_off.png */; };
-		C2CEFD9419C889CD00F4645A /* switch_on.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFD8F19C889CD00F4645A /* switch_on.png */; };
-		C2CEFD9519C889CD00F4645A /* switch_on.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFD8F19C889CD00F4645A /* switch_on.png */; };
 		C2CEFDAC19C8921500F4645A /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFDA819C8921500F4645A /* bg.png */; };
 		C2CEFDAD19C8921500F4645A /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFDA819C8921500F4645A /* bg.png */; };
 		C2CEFDAE19C8921500F4645A /* off.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFDA919C8921500F4645A /* off.png */; };
@@ -390,12 +382,8 @@
 		C2C6B26819C53B33008E0AA4 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameOverScene.h; path = ../Classes/GameOverScene.h; sourceTree = "<group>"; };
 		C2CEFD8219C8601500F4645A /* PopScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PopScene.cpp; path = ../Classes/PopScene.cpp; sourceTree = "<group>"; };
 		C2CEFD8319C8601500F4645A /* PopScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopScene.h; path = ../Classes/PopScene.h; sourceTree = "<group>"; };
-		C2CEFD8619C8647D00F4645A /* page.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = page.psd; sourceTree = "<group>"; };
 		C2CEFD8919C8764100F4645A /* MySwitch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MySwitch.cpp; path = ../Classes/MySwitch.cpp; sourceTree = "<group>"; };
 		C2CEFD8A19C8764100F4645A /* MySwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MySwitch.h; path = ../Classes/MySwitch.h; sourceTree = "<group>"; };
-		C2CEFD8D19C889CD00F4645A /* switch_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch_background.png; sourceTree = "<group>"; };
-		C2CEFD8E19C889CD00F4645A /* switch_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch_off.png; sourceTree = "<group>"; };
-		C2CEFD8F19C889CD00F4645A /* switch_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch_on.png; sourceTree = "<group>"; };
 		C2CEFDA819C8921500F4645A /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		C2CEFDA919C8921500F4645A /* off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = off.png; sourceTree = "<group>"; };
 		C2CEFDAA19C8921500F4645A /* on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = on.png; sourceTree = "<group>"; };
@@ -665,10 +653,6 @@
 		5EA7553219C5E886004474CC /* setting */ = {
 			isa = PBXGroup;
 			children = (
-				C2CEFD8D19C889CD00F4645A /* switch_background.png */,
-				C2CEFD8E19C889CD00F4645A /* switch_off.png */,
-				C2CEFD8F19C889CD00F4645A /* switch_on.png */,
-				C2CEFD8619C8647D00F4645A /* page.psd */,
 				5EA7553319C5E886004474CC /* button_clear_normal.png */,
 				5EA7553419C5E886004474CC /* button_clear_selected.png */,
 				5EA7553519C5E886004474CC /* button_soundclose_normal.png */,
@@ -926,7 +910,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2CEFD9419C889CD00F4645A /* switch_on.png in Resources */,
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
 				C2CEFDAC19C8921500F4645A /* bg.png in Resources */,
 				5EA7554119C5E886004474CC /* background_star.png in Resources */,
@@ -939,7 +922,6 @@
 				5EA7555119C5E886004474CC /* button_goback_normal.png in Resources */,
 				C2B28BBD19C7250B001E8255 /* about_back.png in Resources */,
 				5EA7557019C5EA61004474CC /* menu_start_normal.png in Resources */,
-				C2CEFD8719C8647D00F4645A /* page.psd in Resources */,
 				5EA7556819C5E886004474CC /* sprite_cloud_blue.png in Resources */,
 				5EA7556219C5E886004474CC /* button_soundopen_normal.png in Resources */,
 				5EA7556919C5E886004474CC /* sprite_cloudlong_blue.png in Resources */,
@@ -955,7 +937,6 @@
 				5EA7557819C5EB7E004474CC /* menu_setting_normal.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
 				C2CEFDB219C8921500F4645A /* thumb.png in Resources */,
-				C2CEFD9219C889CD00F4645A /* switch_off.png in Resources */,
 				5EA7554219C5E886004474CC /* Marker Felt.ttf in Resources */,
 				5EA7557919C5EB7E004474CC /* menu_setting_selected.png in Resources */,
 				5EA7554B19C5E886004474CC /* top_button_stop.png in Resources */,
@@ -980,7 +961,6 @@
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				5EA7555D19C5E886004474CC /* sample.jpg in Resources */,
 				5EA7557719C5EB7E004474CC /* menu_about_selected.png in Resources */,
-				C2CEFD9019C889CD00F4645A /* switch_background.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				5EA7554319C5E886004474CC /* carrot.png in Resources */,
 				5EA7555E19C5E886004474CC /* button_clear_normal.png in Resources */,
@@ -1001,16 +981,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2CEFDB119C8921500F4645A /* on.png in Resources */,
-				C2CEFD9519C889CD00F4645A /* switch_on.png in Resources */,
 				C2CEFDB319C8921500F4645A /* thumb.png in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				C2CEFDAD19C8921500F4645A /* bg.png in Resources */,
 				C2B28BBE19C7250B001E8255 /* about_back.png in Resources */,
-				C2CEFD8819C8647D00F4645A /* page.psd in Resources */,
-				C2CEFD9119C889CD00F4645A /* switch_background.png in Resources */,
 				C2CEFDAF19C8921500F4645A /* off.png in Resources */,
 				C2B28BBC19C7250B001E8255 /* sample.png in Resources */,
-				C2CEFD9319C889CD00F4645A /* switch_off.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
