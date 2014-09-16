@@ -112,10 +112,28 @@
 		C2B28BBE19C7250B001E8255 /* about_back.png in Resources */ = {isa = PBXBuildFile; fileRef = C2B28BB919C7250B001E8255 /* about_back.png */; };
 		C2B28BC919C72E12001E8255 /* AboutScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2B28BC719C72E12001E8255 /* AboutScene.cpp */; };
 		C2B28BCA19C72E12001E8255 /* AboutScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2B28BC719C72E12001E8255 /* AboutScene.cpp */; };
-		C2B28BCE19C73DC0001E8255 /* PopScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2B28BCC19C73DC0001E8255 /* PopScene.cpp */; };
-		C2B28BCF19C73DC0001E8255 /* PopScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2B28BCC19C73DC0001E8255 /* PopScene.cpp */; };
 		C2C6B26919C53B33008E0AA4 /* GameOverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2C6B26719C53B33008E0AA4 /* GameOverScene.cpp */; };
 		C2C6B26A19C53B33008E0AA4 /* GameOverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2C6B26719C53B33008E0AA4 /* GameOverScene.cpp */; };
+		C2CEFD8419C8601500F4645A /* PopScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2CEFD8219C8601500F4645A /* PopScene.cpp */; };
+		C2CEFD8519C8601500F4645A /* PopScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2CEFD8219C8601500F4645A /* PopScene.cpp */; };
+		C2CEFD8719C8647D00F4645A /* page.psd in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFD8619C8647D00F4645A /* page.psd */; };
+		C2CEFD8819C8647D00F4645A /* page.psd in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFD8619C8647D00F4645A /* page.psd */; };
+		C2CEFD8B19C8764100F4645A /* MySwitch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2CEFD8919C8764100F4645A /* MySwitch.cpp */; };
+		C2CEFD8C19C8764100F4645A /* MySwitch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2CEFD8919C8764100F4645A /* MySwitch.cpp */; };
+		C2CEFD9019C889CD00F4645A /* switch_background.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFD8D19C889CD00F4645A /* switch_background.png */; };
+		C2CEFD9119C889CD00F4645A /* switch_background.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFD8D19C889CD00F4645A /* switch_background.png */; };
+		C2CEFD9219C889CD00F4645A /* switch_off.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFD8E19C889CD00F4645A /* switch_off.png */; };
+		C2CEFD9319C889CD00F4645A /* switch_off.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFD8E19C889CD00F4645A /* switch_off.png */; };
+		C2CEFD9419C889CD00F4645A /* switch_on.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFD8F19C889CD00F4645A /* switch_on.png */; };
+		C2CEFD9519C889CD00F4645A /* switch_on.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFD8F19C889CD00F4645A /* switch_on.png */; };
+		C2CEFDAC19C8921500F4645A /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFDA819C8921500F4645A /* bg.png */; };
+		C2CEFDAD19C8921500F4645A /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFDA819C8921500F4645A /* bg.png */; };
+		C2CEFDAE19C8921500F4645A /* off.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFDA919C8921500F4645A /* off.png */; };
+		C2CEFDAF19C8921500F4645A /* off.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFDA919C8921500F4645A /* off.png */; };
+		C2CEFDB019C8921500F4645A /* on.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFDAA19C8921500F4645A /* on.png */; };
+		C2CEFDB119C8921500F4645A /* on.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFDAA19C8921500F4645A /* on.png */; };
+		C2CEFDB219C8921500F4645A /* thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFDAB19C8921500F4645A /* thumb.png */; };
+		C2CEFDB319C8921500F4645A /* thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFDAB19C8921500F4645A /* thumb.png */; };
 		C2F8AADD19C0AB4F00716C7E /* Rabbit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2F8AADB19C0AB4F00716C7E /* Rabbit.cpp */; };
 		C2F8AADE19C0AB4F00716C7E /* Rabbit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2F8AADB19C0AB4F00716C7E /* Rabbit.cpp */; };
 		C2F8AAE119C0B21500716C7E /* LongCloud.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2F8AADF19C0B21500716C7E /* LongCloud.cpp */; };
@@ -368,10 +386,20 @@
 		C2B28BB919C7250B001E8255 /* about_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_back.png; sourceTree = "<group>"; };
 		C2B28BC719C72E12001E8255 /* AboutScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AboutScene.cpp; path = ../Classes/AboutScene.cpp; sourceTree = "<group>"; };
 		C2B28BC819C72E12001E8255 /* AboutScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutScene.h; path = ../Classes/AboutScene.h; sourceTree = "<group>"; };
-		C2B28BCC19C73DC0001E8255 /* PopScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PopScene.cpp; path = ../Classes/PopScene.cpp; sourceTree = "<group>"; };
-		C2B28BCD19C73DC0001E8255 /* PopScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopScene.h; path = ../Classes/PopScene.h; sourceTree = "<group>"; };
 		C2C6B26719C53B33008E0AA4 /* GameOverScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameOverScene.cpp; path = ../Classes/GameOverScene.cpp; sourceTree = "<group>"; };
 		C2C6B26819C53B33008E0AA4 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameOverScene.h; path = ../Classes/GameOverScene.h; sourceTree = "<group>"; };
+		C2CEFD8219C8601500F4645A /* PopScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PopScene.cpp; path = ../Classes/PopScene.cpp; sourceTree = "<group>"; };
+		C2CEFD8319C8601500F4645A /* PopScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopScene.h; path = ../Classes/PopScene.h; sourceTree = "<group>"; };
+		C2CEFD8619C8647D00F4645A /* page.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = page.psd; sourceTree = "<group>"; };
+		C2CEFD8919C8764100F4645A /* MySwitch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MySwitch.cpp; path = ../Classes/MySwitch.cpp; sourceTree = "<group>"; };
+		C2CEFD8A19C8764100F4645A /* MySwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MySwitch.h; path = ../Classes/MySwitch.h; sourceTree = "<group>"; };
+		C2CEFD8D19C889CD00F4645A /* switch_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch_background.png; sourceTree = "<group>"; };
+		C2CEFD8E19C889CD00F4645A /* switch_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch_off.png; sourceTree = "<group>"; };
+		C2CEFD8F19C889CD00F4645A /* switch_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch_on.png; sourceTree = "<group>"; };
+		C2CEFDA819C8921500F4645A /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		C2CEFDA919C8921500F4645A /* off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = off.png; sourceTree = "<group>"; };
+		C2CEFDAA19C8921500F4645A /* on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = on.png; sourceTree = "<group>"; };
+		C2CEFDAB19C8921500F4645A /* thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumb.png; sourceTree = "<group>"; };
 		C2F8AADB19C0AB4F00716C7E /* Rabbit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Rabbit.cpp; path = ../Classes/Rabbit.cpp; sourceTree = "<group>"; };
 		C2F8AADC19C0AB4F00716C7E /* Rabbit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rabbit.h; path = ../Classes/Rabbit.h; sourceTree = "<group>"; };
 		C2F8AADF19C0B21500716C7E /* LongCloud.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LongCloud.cpp; path = ../Classes/LongCloud.cpp; sourceTree = "<group>"; };
@@ -637,6 +665,10 @@
 		5EA7553219C5E886004474CC /* setting */ = {
 			isa = PBXGroup;
 			children = (
+				C2CEFD8D19C889CD00F4645A /* switch_background.png */,
+				C2CEFD8E19C889CD00F4645A /* switch_off.png */,
+				C2CEFD8F19C889CD00F4645A /* switch_on.png */,
+				C2CEFD8619C8647D00F4645A /* page.psd */,
 				5EA7553319C5E886004474CC /* button_clear_normal.png */,
 				5EA7553419C5E886004474CC /* button_clear_selected.png */,
 				5EA7553519C5E886004474CC /* button_soundclose_normal.png */,
@@ -690,6 +722,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C2CEFDA719C8921500F4645A /* test */,
 				5EA7550E19C5E886004474CC /* about */,
 				5EA7551219C5E886004474CC /* fonts */,
 				5EA7551419C5E886004474CC /* game */,
@@ -710,10 +743,23 @@
 		C2B28BCB19C73D97001E8255 /* pop */ = {
 			isa = PBXGroup;
 			children = (
-				C2B28BCC19C73DC0001E8255 /* PopScene.cpp */,
-				C2B28BCD19C73DC0001E8255 /* PopScene.h */,
+				C2CEFD8219C8601500F4645A /* PopScene.cpp */,
+				C2CEFD8319C8601500F4645A /* PopScene.h */,
+				C2CEFD8919C8764100F4645A /* MySwitch.cpp */,
+				C2CEFD8A19C8764100F4645A /* MySwitch.h */,
 			);
 			name = pop;
+			sourceTree = "<group>";
+		};
+		C2CEFDA719C8921500F4645A /* test */ = {
+			isa = PBXGroup;
+			children = (
+				C2CEFDA819C8921500F4645A /* bg.png */,
+				C2CEFDA919C8921500F4645A /* off.png */,
+				C2CEFDAA19C8921500F4645A /* on.png */,
+				C2CEFDAB19C8921500F4645A /* thumb.png */,
+			);
+			path = test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -880,16 +926,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2CEFD9419C889CD00F4645A /* switch_on.png in Resources */,
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
+				C2CEFDAC19C8921500F4645A /* bg.png in Resources */,
 				5EA7554119C5E886004474CC /* background_star.png in Resources */,
 				5EA7554A19C5E886004474CC /* top_button_start.png in Resources */,
 				5EA7554919C5E886004474CC /* star.png in Resources */,
 				5EA7554619C5E886004474CC /* game_back.png in Resources */,
 				5EA7555019C5E886004474CC /* button_again_selected.png in Resources */,
+				C2CEFDB019C8921500F4645A /* on.png in Resources */,
 				5EA7555C19C5E886004474CC /* moonrabbit.png in Resources */,
 				5EA7555119C5E886004474CC /* button_goback_normal.png in Resources */,
 				C2B28BBD19C7250B001E8255 /* about_back.png in Resources */,
 				5EA7557019C5EA61004474CC /* menu_start_normal.png in Resources */,
+				C2CEFD8719C8647D00F4645A /* page.psd in Resources */,
 				5EA7556819C5E886004474CC /* sprite_cloud_blue.png in Resources */,
 				5EA7556219C5E886004474CC /* button_soundopen_normal.png in Resources */,
 				5EA7556919C5E886004474CC /* sprite_cloudlong_blue.png in Resources */,
@@ -904,6 +954,8 @@
 				5EA7554719C5E886004474CC /* game_rabbit.png in Resources */,
 				5EA7557819C5EB7E004474CC /* menu_setting_normal.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
+				C2CEFDB219C8921500F4645A /* thumb.png in Resources */,
+				C2CEFD9219C889CD00F4645A /* switch_off.png in Resources */,
 				5EA7554219C5E886004474CC /* Marker Felt.ttf in Resources */,
 				5EA7557919C5EB7E004474CC /* menu_setting_selected.png in Resources */,
 				5EA7554B19C5E886004474CC /* top_button_stop.png in Resources */,
@@ -912,6 +964,7 @@
 				5EA7556619C5E886004474CC /* splash_oldman.png in Resources */,
 				5EA7557119C5EA61004474CC /* menu_start_selected.png in Resources */,
 				5EA7556319C5E886004474CC /* button_soundopen_selected.png in Resources */,
+				C2CEFDAE19C8921500F4645A /* off.png in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
 				5EA7556119C5E886004474CC /* button_soundclose_selected.png in Resources */,
 				5EA7554819C5E886004474CC /* sample.jpg in Resources */,
@@ -927,6 +980,7 @@
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				5EA7555D19C5E886004474CC /* sample.jpg in Resources */,
 				5EA7557719C5EB7E004474CC /* menu_about_selected.png in Resources */,
+				C2CEFD9019C889CD00F4645A /* switch_background.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				5EA7554319C5E886004474CC /* carrot.png in Resources */,
 				5EA7555E19C5E886004474CC /* button_clear_normal.png in Resources */,
@@ -946,9 +1000,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2CEFDB119C8921500F4645A /* on.png in Resources */,
+				C2CEFD9519C889CD00F4645A /* switch_on.png in Resources */,
+				C2CEFDB319C8921500F4645A /* thumb.png in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
+				C2CEFDAD19C8921500F4645A /* bg.png in Resources */,
 				C2B28BBE19C7250B001E8255 /* about_back.png in Resources */,
+				C2CEFD8819C8647D00F4645A /* page.psd in Resources */,
+				C2CEFD9119C889CD00F4645A /* switch_background.png in Resources */,
+				C2CEFDAF19C8921500F4645A /* off.png in Resources */,
 				C2B28BBC19C7250B001E8255 /* sample.png in Resources */,
+				C2CEFD9319C889CD00F4645A /* switch_off.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -967,11 +1029,12 @@
 				C2F8AAE119C0B21500716C7E /* LongCloud.cpp in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
-				C2B28BCE19C73DC0001E8255 /* PopScene.cpp in Sources */,
+				C2CEFD8419C8601500F4645A /* PopScene.cpp in Sources */,
 				5E90051219BF3E5800164272 /* MainScene.cpp in Sources */,
 				C2F8AAED19C0B5CF00716C7E /* ShortCloud.cpp in Sources */,
 				C2C6B26919C53B33008E0AA4 /* GameOverScene.cpp in Sources */,
 				C2B28BC919C72E12001E8255 /* AboutScene.cpp in Sources */,
+				C2CEFD8B19C8764100F4645A /* MySwitch.cpp in Sources */,
 				5E90051619BF3E6000164272 /* SettingScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -981,6 +1044,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2F8AADE19C0AB4F00716C7E /* Rabbit.cpp in Sources */,
+				C2CEFD8C19C8764100F4645A /* MySwitch.cpp in Sources */,
 				5E90051B19BF3E6700164272 /* Cloud.cpp in Sources */,
 				C2B28BCA19C72E12001E8255 /* AboutScene.cpp in Sources */,
 				C2C6B26A19C53B33008E0AA4 /* GameOverScene.cpp in Sources */,
@@ -990,7 +1054,7 @@
 				5E90051719BF3E6000164272 /* SettingScene.cpp in Sources */,
 				C2F8AAE219C0B21500716C7E /* LongCloud.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
-				C2B28BCF19C73DC0001E8255 /* PopScene.cpp in Sources */,
+				C2CEFD8519C8601500F4645A /* PopScene.cpp in Sources */,
 				5E90051319BF3E5800164272 /* MainScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,122 +1,88 @@
-///*对话框场景类的具体实现*/
-//#include "PopScene.h"
 //
-//Scene * PopScene::scene()
-//{
-//	Scene * scene = NULL;
-//	do
-//	{
-//		scene = Scene::create();
-//		PopScene * layer = PopScene::create();
-//		scene->addChild(layer);
-//	}
-//	while(0);
-//    
-//	return scene;
-//}
+//  PopScene.cpp
+//  JumpRabbit
 //
-//bool PopScene::init()
-//{
-//	bool bRet = false;
-//	do
-//	{
-//		CC_BREAK_IF(!CCLayer::init());
-//        
-//		Size winSize = Director::getInstance()->getVisibleSize();
-//        
-//		//设置这个层的背景图片，并且设置其位置为整个屏幕的中点
-//		Sprite * background = Sprite::create("background.png");
-//		m_bgSprite = background;
-//		background->setPosition(Vec2(winSize.width/2,winSize.height/2));
-//		this->addChild(background);
-//        
-//		//获得背景图片的大小
-//		Size contentSize = background->getContentSize();
-//		m_size = contentSize;
-//        
-//		//添加俩个菜单在这个层中
-//		MenuItemImage * item1 = MenuItemImage::create("btn-play-normal.png",
-//                                                          "btn-play-selected.png","",
-//                                                          this,menu_selector(PopScene::yesButton));
-//        
-//		MenuItemImage * item2 = MenuItemImage::create("btn-highscores-normal.png",
-//                                                          "btn-highscores-selected.png","",
-//                                                          this,menu_selector(PopScene::noButton));
-//        
-//		CCMenu * menu = CCMenu::create(item1,item2,NULL);
-//		menu->alignItemsHorizontallyWithPadding(5);
-//		menu->setPosition(ccp(contentSize.width/2,contentSize.height/3));
-//		//kCCMenuHandlerPriority的值为-128，代表的是菜单按钮的触摸优先级
-//		//设置menu优先级，这里设置为普通menu的二倍减一，原因看下边
-//		menu->setTouchPriority(kCCMenuHandlerPriority*2-1);
-//        
-//		background->addChild(menu);
-//        
-//		//设置题目和文本内容
-//		this->setTitle();
-//		this->setContent();
-//        
-//		this->setTouchEnabled(true);
-//		bRet = true;
-//	}
-//	while(0);
-//    
-//	return bRet;
-//}
-//
-////void PopScene::registerWithTouchDispatcher()
-////{
-////	//kCCMenuHandlerPriority=-128，将这个值设置为-128的二倍，可以比下边的层的优先级高
-////	//而且ccTouchBegan的返回值为true，说明其他的层将接受不到这个触摸消息了，只有这个层上边的
-////	//菜单的优先级比他还要打，所以它上边的菜单是可以接收到触摸消息的
-////	CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this,
-////                                                                            kCCMenuHandlerPriority*2,true);
-////}
-//
-//bool PopScene::onTouchesBegan(Touch * touch,Event * pevent)
-//{
-//	return true;
-//}
-//
-////点击菜单按钮的时候调用的事件处理函数
-//void PopScene::yesButton(Object * object)
-//{
-//	this->removeFromParentAndCleanup(true);
-//}
-//
-//void PopScene::noButton(Object * object)
-//{
-//	this->removeFromParentAndCleanup(true);
-//}
-//
-////设置这个层的题目
-//void PopScene::setTitle()
-//{
-//	
-//	CCLabelBMFont * title = CCLabelBMFont::create("Tips","bitmapFontChinese.fnt");
-//	title->setPosition(ccp(m_size.width/2,m_size.height-title->getContentSize().height/2));
-//	m_bgSprite->addChild(title);
-//}
-//
-////设置层的内容
-//void PopScene::setContent()
-//{
-//	Label * content = Label::create("hello! everyone,welcome to www.zaojiahua.com",
-//                                              "",24);
-//	content->setPosition(Vec2(m_size.width/2,m_size.height/2));
-//	//设置ttf的文本域
-//	content->setDimensions(m_size.width-60,m_size.height-100);
-//	//设置ttf的水平对齐方式
-//    content->setHorizontalAlignment(kCCTextAlignmentLeft);
-//    
-//	m_bgSprite->addChild(content);
-//}
+//  Created by jihaitao on 14-9-16.
 //
 //
-//
-//
-//
-//
-//
-//
-//
+
+#include "PopScene.h"
+
+Scene* PopScene::createScene(){
+    auto scene=Scene::create();
+    auto layer = PopScene::create();
+    scene->addChild(layer);
+    return scene;
+}
+
+bool PopScene::init(){
+
+    if (!Layer::init()) {
+        return false;
+    }
+    
+    
+    visibleSize = Director::getInstance()->getVisibleSize();
+    
+    auto b = Sprite::create("game_back.png");
+    b->setPosition(Vec2(visibleSize.width/2,visibleSize.height/2));
+    addChild(b);
+    
+    
+    auto background = Sprite::create("setting_background.png");
+    background->setPosition(Vec2(visibleSize.width/2,visibleSize.height/2));
+    addChild(background);
+    
+    Size contentSize = background->getContentSize();
+    
+    //添加音效标签
+    auto label=Label::create();
+    label->setString("音效：");
+    label->setTextColor(Color4B::YELLOW);
+    label->setSystemFontSize(48);
+    label->setPosition(Vec2(contentSize.width/2-50, contentSize.height/2+50));
+    background->addChild(label);
+    
+    //开关按钮
+    auto bg = Sprite::create("bg.png");
+    auto onSprite = Sprite::create("on.png");
+    auto offSprite = Sprite::create("off.png");
+    auto thumbSprite = Sprite::create("thumb.png");
+    auto  ttfon=Label::create("","Arial",14);
+    auto  ttfoff=Label::create("","Arial",14);
+    
+    auto mySwitch = ControlSwitch::create(bg, onSprite, offSprite, thumbSprite,ttfon,ttfoff);
+    mySwitch->setPosition(Vec2(contentSize.width/2+50, contentSize.height/2+50));
+    background->addChild(mySwitch);
+
+    //清除最高分按钮
+    auto clearButton = MenuItemImage::create("button_clear_normal.png",
+                                             "button_clear_selected.png",
+                                        CC_CALLBACK_1(PopScene::callback,this));
+    clearButton->setPosition(Vec2(contentSize.width/2, contentSize.height/2-50));
+    clearButton->setTag(2);
+    
+    
+    auto menu = Menu::create(clearButton, NULL);
+    menu->setPosition(Vec2::ZERO);
+    menu->setTouchMode(Touch::DispatchMode::ONE_BY_ONE);
+    background->addChild(menu);
+    
+    return true;
+}
+
+void PopScene::callback(cocos2d::Ref *pSender){
+
+    MenuItem *item = (MenuItem*) pSender;
+    switch (item->getTag()) {
+        case 1:
+            log("开关");
+            break;
+        case 2:
+            log("清除数据数据");
+            break;
+        default:
+            break;
+    }
+
+}

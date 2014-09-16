@@ -1,30 +1,30 @@
-/*对话框场景类的头文件*/
-#ifndef _POP_SCENE_H_
-#define _POP_SCENE_H_
-#include "cocos2d.h"
+//
+//  PopScene.h
+//  JumpRabbit
+//
+//  Created by jihaitao on 14-9-16.
+//
+//
 
-using namespace cocos2d;
+#ifndef __JumpRabbit__PopScene__
+#define __JumpRabbit__PopScene__
 
-class PopScene : public Layer
-{
-public:
-	static Scene * scene();
-	bool init();
-	CREATE_FUNC(PopScene);
+#include <iostream>
+#include <cocos2d.h>
+#include <cocos-ext.h>
+
+USING_NS_CC;
+USING_NS_CC_EXT;
+
+class PopScene : public Layer{
 private:
-	//注册触摸事件，实现ccTouchBegan()方法
-    //	void registerWithTouchDispatcher();
-	bool onTouchesBegan(Touch * touch,Event * pevent);
-	//在弹出的对话框上加俩个按钮，以下的函数是对应的按钮的处理事件
-	void yesButton(Object * object);
-	void noButton(Object * object);
-	//设置对话框的title
-	void setTitle();
-	//设置对话框的文本内容
-	void setContent();
-	//m_size代表的是对话框背景的大小
-	Size m_size;
-	//对话框的背景精灵
-	Sprite * m_bgSprite;
+    Size visibleSize;
+    
+public:
+    static Scene* createScene();
+    virtual bool init();
+    CREATE_FUNC(PopScene);
+    void callback(Ref* pSender);
 };
-#endif
+
+#endif /* defined(__JumpRabbit__PopScene__) */

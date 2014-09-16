@@ -9,6 +9,7 @@
 #include "MainMenu.h"
 #include "SettingScene.h"
 #include "MainScene.h"
+#include "PopScene.h"
 
 USING_NS_CC;
 
@@ -108,7 +109,7 @@ void MainMenu::menuCallback(Ref* pSender)
             break;
         case caseSetting:
             log("Item setting");
-            Director::getInstance()->replaceScene(SettingScene::createScene());
+            Director::getInstance()->replaceScene(PopScene::createScene());
             break;
             
         default:
