@@ -83,6 +83,8 @@ bool PopScene::init(){
     menu->setTouchMode(Touch::DispatchMode::ONE_BY_ONE);
     background->addChild(menu);
     
+    
+    background->setVisible(false);
     return true;
 }
 

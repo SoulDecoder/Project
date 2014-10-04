@@ -29,7 +29,7 @@ void Cloud::initPhysics(){
     getPhysicsBody()->setCollisionBitmask(0);
     
     getPhysicsBody()->setGravityEnable(false);
-    getPhysicsBody()->setVelocity(Vec2(0, -300));
+    getPhysicsBody()->setVelocity(Vec2(0, -200));
     
     float f =  ((float)(rand()%95))/100;
     
