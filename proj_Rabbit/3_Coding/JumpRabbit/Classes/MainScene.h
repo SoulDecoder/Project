@@ -27,6 +27,7 @@ private:
     Sprite * topbar;
     Sprite * background;
     Sprite * gameContainer;
+    float d;
 public:
     
     static Scene * createScene();

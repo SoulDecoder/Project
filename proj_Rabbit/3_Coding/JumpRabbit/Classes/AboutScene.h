@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include <cocos2d.h>
+#include "MainMenu.h"
 
 USING_NS_CC;
 
@@ -20,6 +21,7 @@ class AboutScene:public Layer{
 public:
     static Scene * createScene();
     virtual bool init();
+    void callback(Ref* pSender);
     CREATE_FUNC(AboutScene);
 };
 

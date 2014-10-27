@@ -58,6 +58,33 @@ bool AboutScene::init()
     maxScore->setTextColor(Color4B::YELLOW);
     maxScore->setPosition(Vec2(visibleSize.width/2,visibleSize.height/2-300));
     addChild(maxScore);
+    
+    
+    auto backMenuButton = MenuItemImage::create("button_goback_normal.png",
+                                                "button_goback_selected.png",
+                                                CC_CALLBACK_1(AboutScene::callback,this));
+    backMenuButton->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2-400));
+    backMenuButton->setTag(3);
+    
+    
+    auto menu = Menu::create(backMenuButton, NULL);
+    menu->setPosition(Vec2::ZERO);
+    menu->setTouchMode(Touch::DispatchMode::ONE_BY_ONE);
+    background->addChild(menu);
 
     return  true;
+}
+
+void AboutScene::callback(cocos2d::Ref *pSender){
+    
+    MenuItem *item = (MenuItem*) pSender;
+    switch (item->getTag()) {
+               case 3:
+            log("返回菜单");
+            Director::getInstance()->replaceScene(MainMenu::createScene());
+            break;
+            
+        default:
+            break;
+    }
 }

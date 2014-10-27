@@ -11,20 +11,22 @@
 
 #include <iostream>
 #include <cocos2d.h>
+#include "MainMenu.h"
 
 
 USING_NS_CC;
-using namespace std;
 
-class SettingScene:public Layer{
+class SettingScene : public Layer{
 private:
-    bool touchBegin(Touch* t,Event *e);
-    void yesButton(Object* obj);
-    
+    Size visibleSize;
+    MenuItemImage* onButton;
+    MenuItemImage* offButton;
 public:
-    static Scene * createScene();
+   
+    static Scene* createScene();
     virtual bool init();
     CREATE_FUNC(SettingScene);
+    void callback(Ref* pSender);
 };
 
-#endif /* defined(__JumpRabbit__SettingScene__) */
+#endif /* defined(__JumpRabbit__PopScene__) */

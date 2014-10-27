@@ -57,8 +57,6 @@
 		5E0ECF6119AE1A2B00826E8E /* MainMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E0ECF5F19AE1A2B00826E8E /* MainMenu.cpp */; };
 		5E90051219BF3E5800164272 /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E90051019BF3E5800164272 /* MainScene.cpp */; };
 		5E90051319BF3E5800164272 /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E90051019BF3E5800164272 /* MainScene.cpp */; };
-		5E90051619BF3E6000164272 /* SettingScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E90051419BF3E6000164272 /* SettingScene.cpp */; };
-		5E90051719BF3E6000164272 /* SettingScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E90051419BF3E6000164272 /* SettingScene.cpp */; };
 		5E90051A19BF3E6700164272 /* Cloud.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E90051819BF3E6700164272 /* Cloud.cpp */; };
 		5E90051B19BF3E6700164272 /* Cloud.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E90051819BF3E6700164272 /* Cloud.cpp */; };
 		5E9005F619BF44EF00164272 /* MainMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E0ECF5F19AE1A2B00826E8E /* MainMenu.cpp */; };
@@ -114,10 +112,8 @@
 		C2B28BCA19C72E12001E8255 /* AboutScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2B28BC719C72E12001E8255 /* AboutScene.cpp */; };
 		C2C6B26919C53B33008E0AA4 /* GameOverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2C6B26719C53B33008E0AA4 /* GameOverScene.cpp */; };
 		C2C6B26A19C53B33008E0AA4 /* GameOverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2C6B26719C53B33008E0AA4 /* GameOverScene.cpp */; };
-		C2CEFD8419C8601500F4645A /* PopScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2CEFD8219C8601500F4645A /* PopScene.cpp */; };
-		C2CEFD8519C8601500F4645A /* PopScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2CEFD8219C8601500F4645A /* PopScene.cpp */; };
-		C2CEFD8B19C8764100F4645A /* MySwitch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2CEFD8919C8764100F4645A /* MySwitch.cpp */; };
-		C2CEFD8C19C8764100F4645A /* MySwitch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2CEFD8919C8764100F4645A /* MySwitch.cpp */; };
+		C2CEFD8419C8601500F4645A /* SettingScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2CEFD8219C8601500F4645A /* SettingScene.cpp */; };
+		C2CEFD8519C8601500F4645A /* SettingScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2CEFD8219C8601500F4645A /* SettingScene.cpp */; };
 		C2CEFDAC19C8921500F4645A /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFDA819C8921500F4645A /* bg.png */; };
 		C2CEFDAD19C8921500F4645A /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFDA819C8921500F4645A /* bg.png */; };
 		C2CEFDAE19C8921500F4645A /* off.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CEFDA919C8921500F4645A /* off.png */; };
@@ -326,8 +322,6 @@
 		5E0ECF6019AE1A2B00826E8E /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenu.h; path = ../Classes/MainMenu.h; sourceTree = "<group>"; };
 		5E90051019BF3E5800164272 /* MainScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 1; name = MainScene.cpp; path = ../Classes/MainScene.cpp; sourceTree = "<group>"; };
 		5E90051119BF3E5800164272 /* MainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScene.h; path = ../Classes/MainScene.h; sourceTree = "<group>"; };
-		5E90051419BF3E6000164272 /* SettingScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SettingScene.cpp; path = ../Classes/SettingScene.cpp; sourceTree = "<group>"; };
-		5E90051519BF3E6000164272 /* SettingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingScene.h; path = ../Classes/SettingScene.h; sourceTree = "<group>"; };
 		5E90051819BF3E6700164272 /* Cloud.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Cloud.cpp; path = ../Classes/Cloud.cpp; sourceTree = "<group>"; };
 		5E90051919BF3E6700164272 /* Cloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cloud.h; path = ../Classes/Cloud.h; sourceTree = "<group>"; };
 		5EA7551119C5E886004474CC /* background_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_star.png; sourceTree = "<group>"; };
@@ -380,10 +374,8 @@
 		C2B28BC819C72E12001E8255 /* AboutScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutScene.h; path = ../Classes/AboutScene.h; sourceTree = "<group>"; };
 		C2C6B26719C53B33008E0AA4 /* GameOverScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameOverScene.cpp; path = ../Classes/GameOverScene.cpp; sourceTree = "<group>"; };
 		C2C6B26819C53B33008E0AA4 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameOverScene.h; path = ../Classes/GameOverScene.h; sourceTree = "<group>"; };
-		C2CEFD8219C8601500F4645A /* PopScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PopScene.cpp; path = ../Classes/PopScene.cpp; sourceTree = "<group>"; };
-		C2CEFD8319C8601500F4645A /* PopScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopScene.h; path = ../Classes/PopScene.h; sourceTree = "<group>"; };
-		C2CEFD8919C8764100F4645A /* MySwitch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MySwitch.cpp; path = ../Classes/MySwitch.cpp; sourceTree = "<group>"; };
-		C2CEFD8A19C8764100F4645A /* MySwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MySwitch.h; path = ../Classes/MySwitch.h; sourceTree = "<group>"; };
+		C2CEFD8219C8601500F4645A /* SettingScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SettingScene.cpp; path = ../Classes/SettingScene.cpp; sourceTree = "<group>"; };
+		C2CEFD8319C8601500F4645A /* SettingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingScene.h; path = ../Classes/SettingScene.h; sourceTree = "<group>"; };
 		C2CEFDA819C8921500F4645A /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		C2CEFDA919C8921500F4645A /* off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = off.png; sourceTree = "<group>"; };
 		C2CEFDAA19C8921500F4645A /* on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = on.png; sourceTree = "<group>"; };
@@ -467,7 +459,6 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C2B28BCB19C73D97001E8255 /* pop */,
 				5EB9B8EC19AA32960024F997 /* Scene */,
 				5EB9B8EB19AA328C0024F997 /* Rabbit */,
 				5EB9B8E819AA32790024F997 /* Cloud */,
@@ -689,8 +680,8 @@
 		5EB9B8EC19AA32960024F997 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				5E90051419BF3E6000164272 /* SettingScene.cpp */,
-				5E90051519BF3E6000164272 /* SettingScene.h */,
+				C2CEFD8219C8601500F4645A /* SettingScene.cpp */,
+				C2CEFD8319C8601500F4645A /* SettingScene.h */,
 				C2B28BC719C72E12001E8255 /* AboutScene.cpp */,
 				C2B28BC819C72E12001E8255 /* AboutScene.h */,
 				5E90051019BF3E5800164272 /* MainScene.cpp */,
@@ -722,17 +713,6 @@
 			);
 			name = Resources;
 			path = ../Resources;
-			sourceTree = "<group>";
-		};
-		C2B28BCB19C73D97001E8255 /* pop */ = {
-			isa = PBXGroup;
-			children = (
-				C2CEFD8219C8601500F4645A /* PopScene.cpp */,
-				C2CEFD8319C8601500F4645A /* PopScene.h */,
-				C2CEFD8919C8764100F4645A /* MySwitch.cpp */,
-				C2CEFD8A19C8764100F4645A /* MySwitch.h */,
-			);
-			name = pop;
 			sourceTree = "<group>";
 		};
 		C2CEFDA719C8921500F4645A /* test */ = {
@@ -802,7 +782,7 @@
 				LastUpgradeCheck = 0500;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = 5XDQZ65NLA;
+						DevelopmentTeam = MDDB52YB8L;
 					};
 				};
 			};
@@ -1005,13 +985,11 @@
 				C2F8AAE119C0B21500716C7E /* LongCloud.cpp in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
-				C2CEFD8419C8601500F4645A /* PopScene.cpp in Sources */,
+				C2CEFD8419C8601500F4645A /* SettingScene.cpp in Sources */,
 				5E90051219BF3E5800164272 /* MainScene.cpp in Sources */,
 				C2F8AAED19C0B5CF00716C7E /* ShortCloud.cpp in Sources */,
 				C2C6B26919C53B33008E0AA4 /* GameOverScene.cpp in Sources */,
 				C2B28BC919C72E12001E8255 /* AboutScene.cpp in Sources */,
-				C2CEFD8B19C8764100F4645A /* MySwitch.cpp in Sources */,
-				5E90051619BF3E6000164272 /* SettingScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1020,17 +998,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2F8AADE19C0AB4F00716C7E /* Rabbit.cpp in Sources */,
-				C2CEFD8C19C8764100F4645A /* MySwitch.cpp in Sources */,
 				5E90051B19BF3E6700164272 /* Cloud.cpp in Sources */,
 				C2B28BCA19C72E12001E8255 /* AboutScene.cpp in Sources */,
 				C2C6B26A19C53B33008E0AA4 /* GameOverScene.cpp in Sources */,
 				C2F8AAEE19C0B5CF00716C7E /* ShortCloud.cpp in Sources */,
 				5E9005F619BF44EF00164272 /* MainMenu.cpp in Sources */,
 				5087E75717EB910900C73F5D /* AppDelegate.cpp in Sources */,
-				5E90051719BF3E6000164272 /* SettingScene.cpp in Sources */,
 				C2F8AAE219C0B21500716C7E /* LongCloud.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
-				C2CEFD8519C8601500F4645A /* PopScene.cpp in Sources */,
+				C2CEFD8519C8601500F4645A /* SettingScene.cpp in Sources */,
 				5E90051319BF3E5800164272 /* MainScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
